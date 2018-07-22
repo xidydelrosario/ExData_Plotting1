@@ -17,6 +17,6 @@ subdata$datetime <- strptime(paste(subdata$Date, subdata$Time), "%Y-%m-%d %H:%M:
 
 png("plot2.png", width=480, height=480)
 plot(subdata$datetime,subdata$Global_active_power, type="l",
-     ylab="Global Active Power (kilowatts)"
+     ylab="Global Active Power (kilowatts)", xlab=""
      )
 dev.off()
